@@ -1,0 +1,54 @@
+#map, #panorama {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-brand{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.container-fluid{
+    height: calc(100% - 76px); /*calc() calcul en css. Prend 100% de l'ecran moins les 76px de la navbar*/
+}
+
+.row{
+    height: 100%;
+    overflow-y: auto;
+}
+
+#map-container{
+    padding: 0px;
+    height: 100%;
+}
+
+#dreams-container{
+    padding: 15px;
+    overflow-y: auto;
+    height: 100%;
+    background: #eee;
+}
+
+.card{
+    margin: 20px;
+}
+
+#reset-map, #back-to-map{
+    position: absolute;
+    z-index: 10;                    /*Pour etre sur la carte. Etre par dessus*/
+    left: calc(50% - 75px);         /*Pour etre au centre, au milieu*/
+    top: 10px;                      /*Pour avoir un petit espace avec le haut*/
+    width: 150px;
+}
